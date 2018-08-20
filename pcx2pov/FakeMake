@@ -3,3 +3,4 @@ gcc -lallegro -lallegro_image pcx2pov.c
 cat cat.tmp | grep -v "{color rgb<1.000000,1.000000,1.000000>}" > cat.pov
 povray cat.pov
 rm cat.tmp
+rm a.out
