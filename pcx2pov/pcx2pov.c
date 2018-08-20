@@ -38,20 +38,11 @@ int main(int argc, char *argv[]){
          endy = starty + 0.5;
 
          currentcolor = al_get_pixel(povpic, x, y);
-         //al_unmap_rgb(currentcolor, &red, &green, &blue);
-         //colorr = red/256; colorg = green/256; colorb = blue/256;
 
-         //colorr=0.5; colorg=0.5; colorb=0.5;
          printf("box { <-0.5, %f, %f>, <0, %f, %f> texture {pigment {color rgb<%f,%f,%f>} } }\n", starty, startx, endy, endx, currentcolor.r, currentcolor.g, currentcolor.b);
-         //printf("box { <-0.5, %f, %f>, <0, %f, %f> texture {pigment {color rgb<%f,%f,%f>} } }\n", starty, startx, endy, endx, colorr, colorg, colorb);
       }
       printf("\n");
    }
 
    return 0;
 }
-
-
-// -4+(0.5*(1*x))
-
-// "box { <%f, %f, %f>, <%f, %f, %f> texture {pigment {color rgb<%f,%f,%f>} } }"
