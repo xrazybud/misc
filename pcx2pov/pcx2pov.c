@@ -26,8 +26,6 @@ int main(int argc, char *argv[]){
    float startx, starty, endx, endy;
 
    ALLEGRO_COLOR currentcolor;
-   unsigned char red, green, blue;
-   float colorr, colorg, colorb;
 
    for (x = 1; x < picx; x++) {
       for (y = 1; y < picy; y++) {
