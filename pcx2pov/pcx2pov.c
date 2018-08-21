@@ -26,12 +26,12 @@ int main(int argc, char *argv[]){
 
    ALLEGRO_COLOR currentcolor;
 
-   for (x = 1; x < picx; x++) {
-      for (y = 1; y < picy; y++) {
-         startx = -(picx/2*0.5)+(0.5*(x));
+   for (x = 0; x < picx; x++) {
+      for (y = 0; y < picy; y++) {
+         startx = -(picx/2*0.5)+(0.5*x);
          endx = startx + 0.5;
 
-         starty = -(picy/2*0.5)+(0.5*(y));
+         starty = (picy/2*0.5)-(0.5*y);
          endy = starty + 0.5;
 
          currentcolor = al_get_pixel(povpic, x, y);
@@ -39,7 +39,6 @@ int main(int argc, char *argv[]){
          printf("box { <-0.5,%f,%f>,<0,%f,%f> texture {pigment {color rgb<%f,%f,%f>} } }\n",
                  starty, startx, endy, endx, currentcolor.r, currentcolor.g, currentcolor.b);
       }
-      printf("\n");
    }
 
    return 0;
