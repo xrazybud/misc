@@ -9,4 +9,4 @@ Makes a live wallpaper
 ## Notes
 - The wheel is a giant minute wheel, with the actual minute place shaded
 - Text is updated regularly with a console command
-- It's grepping/tailing logs now, but you could do 'watch -n 60 w' or whatever you want
+- It's grepping/tailing logs now, but you could do 'w' or whatever you want
