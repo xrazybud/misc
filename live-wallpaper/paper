@@ -1,1 +1,0 @@
-cd ~/Source/mine/misc/live-wallpaper; while true; do python3 live-dive.py; sleep 60; done
