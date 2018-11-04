@@ -1,8 +1,8 @@
-#HighwayHash
+# HighwayHash
 
 [Fast keyed hash/pseudo-random function using SIMD multiply and permute](https://arxiv.org/abs/1612.06257)
 
-##Applications
+## Applications
 
 Suggested applications of HighwayHash include:
 
